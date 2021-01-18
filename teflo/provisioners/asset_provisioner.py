@@ -128,7 +128,8 @@ class AssetProvisioner(LoggerMixin, TimeMixin):
                     res_profile_list.append(host_profile)
                 self.logger.info('Successfully provisioned %s asset(s) %s with asset_id(s) %s:'
                                  % (len(res_profile_list), [res_profile_list[i]['name'] for i in range(0, len(res))],
-                                    [res_profile_list[i]['asset_id'] for i in range(0, len(res))]))
+                                    [res_profile_list[i]['provider']['asset_id'] if res_profile_list[i].get('provider')
+                                     else res_profile_list[i]['asset_id'] for i in range(0, len(res))]))
                 return res_profile_list
             else:
                 # Single resource has been provisioned
