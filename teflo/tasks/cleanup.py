@@ -25,7 +25,7 @@
 """
 from ..core import TefloTask
 from ..exceptions import TefloOrchestratorError
-from ..provisioners import AssetProvisioner
+from ..plugins.provisioners import AssetProvisioner
 from teflo.orchestrators import ActionOrchestrator
 
 

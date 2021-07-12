@@ -24,7 +24,7 @@
     :license: GPLv3, see LICENSE for more details.
 """
 from ..core import TefloTask
-from ..provisioners import AssetProvisioner
+from ..plugins.provisioners import AssetProvisioner
 
 
 class ProvisionTask(TefloTask):

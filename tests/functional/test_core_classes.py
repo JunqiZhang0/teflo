@@ -40,7 +40,7 @@ from teflo.core import TefloOrchestrator, TefloProvider, \
     TefloPlugin, ProvisionerPlugin, ExecutorPlugin, ImporterPlugin, OrchestratorPlugin, FileLockMixin, \
     Inventory, NotificationPlugin
 from teflo.resources import Asset
-from teflo.provisioners import AssetProvisioner
+from teflo.plugins.provisioners.asset_provisioner import AssetProvisioner
 from teflo.exceptions import TefloError, LoggerMixinError
 
 

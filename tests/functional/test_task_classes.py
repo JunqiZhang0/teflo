@@ -32,7 +32,7 @@ from teflo.exceptions import TefloOrchestratorError, TefloImporterError, TefloNo
 from teflo.tasks import CleanupTask, ExecuteTask, OrchestrateTask, \
     ProvisionTask, ReportTask, ValidateTask, NotificationTask
 from teflo.core import ProvisionerPlugin
-from teflo.provisioners import AssetProvisioner
+from teflo.plugins.provisioners.asset_provisioner import AssetProvisioner
 from teflo.resources import Asset
 
 

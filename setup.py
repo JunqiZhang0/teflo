@@ -89,8 +89,8 @@ setup(
             'openstack_provider = teflo.providers:OpenstackProvider'
              ],
         'provisioner_plugins': [
-            'beaker_client = teflo.provisioners.ext:BeakerClientProvisionerPlugin',
-            'openstack_libcloud = teflo.provisioners.ext:OpenstackLibCloudProvisionerPlugin'
+            'beaker_client = teflo.plugins.provisioners.ext:BeakerClientProvisionerPlugin',
+            'openstack_libcloud = teflo.plugins.provisioners.ext:OpenstackLibCloudProvisionerPlugin'
         ],
         'orchestrator_plugins': [
             'ansible = teflo.orchestrators.ext:AnsibleOrchestratorPlugin'

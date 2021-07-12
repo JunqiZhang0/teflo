@@ -30,8 +30,7 @@ import pytest
 
 from teflo.resources import Asset
 from teflo.core import ProvisionerPlugin
-from teflo.provisioners import AssetProvisioner
-
+from teflo.plugins.provisioners.asset_provisioner import AssetProvisioner
 
 @pytest.fixture(scope='class')
 def default_host_params():

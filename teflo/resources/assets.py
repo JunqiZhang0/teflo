@@ -28,7 +28,7 @@
 
 from ..core import TefloResource
 from ..exceptions import TefloResourceError
-from ..provisioners import AssetProvisioner
+from ..plugins.provisioners import AssetProvisioner
 from ..helpers import gen_random_str
 from ..helpers import get_provisioners_plugins_list, get_provisioner_plugin_class, get_default_provisioner_plugin, \
     is_provider_mapped_to_provisioner
